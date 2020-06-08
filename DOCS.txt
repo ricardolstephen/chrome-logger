@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+Overview
+
++ The loggers for each browser event is defined in BrowserLogger.js
++ The rest of the files contain utilities
+  BrowserOptions.js has the browser options.
+  BrowserLoggerStorage.js manages storage for the logs.
+  BrowserLoggerArgumentParser.js is the parser for the command line arguments.
+  BrowserLoggerTargetTagger.js assigns targetIds to targets and can be used to
+    lookup the targetId of a target.
+
+--------------------------------------------------------------------------------
+Events
+
++ defaultpage
+  defaultdocumentvisible
+
++ (target, event, url, timestamp)
+  pagecreated
+  pagechanged
+  pagedestroyed
+ 
++ (target, event, timestamp)
+  documentvisible, documenthidden
+  documentscroll, documentkeydown (buffered)
+  documentfocus, documentblur, documentclick
